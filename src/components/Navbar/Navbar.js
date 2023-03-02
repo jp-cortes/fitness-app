@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Stack } from '@mui/system';
 
-import Logo from '../assets/images/logo.png';
+import Logo from '../../assets/images/logo.png';
 
 function Navbar() {
   return (

@@ -1,0 +1,29 @@
+.button {
+    background-color: #f8b10e;
+    width: 200px;
+    padding: 16px;
+    border-radius: 8px;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-decoration: none;
+    border: solid 2px #f8b10e;
+}
+
+.button:hover {
+    background-color: whitesmoke;
+    color: #f8b10e;
+}
+.bannerImg {
+    position: absolute;
+    right: 40px;
+    top: 0px;
+    width: 700px;
+    height: 900px;
+    margin-top: -330px;
+    border-bottom-left-radius: 80px;
+}
+@media screen and (max-width:1200px) {
+    .bannerImg {
+        display: none;
+    }
+}
