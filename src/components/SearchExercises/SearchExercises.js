@@ -3,9 +3,8 @@ import { Box, Stack, Typography, TextField } from '@mui/material';
 import Styles from './SearchExercises.module.css';
 import { fetchData } from '../../utils/fetchData';
 
-function SearchExercises() {
+function SearchExercises({ setExercises, bodyPart, setBodyPart}) {
   const [search, setSearch] = useState('');
-  const [exercises, setExercises] = useState([]);
   const [bodyParts, setBodyParts] = useState([]);
 
   useEffect(() => {
@@ -71,7 +70,11 @@ Awesome Exercises You Should Know
       </Box>
       <Box sx={{ position: 'relative',
     width: '100%', p: '20px'}}>
-        <HorizontalScrollbar data={bodyParts}/>
+        <HorizontalScrollbar 
+        data={bodyParts}
+        bodyPart={bodyPart}
+        setBodyPart={setBodyPart}
+        />
       </Box>
       </Stack>
   )
