@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Stack, Typography, TextField } from '@mui/material';
-import Styles from './SearchExercises.module.css';
 import { fetchData } from '../../utils/fetchData';
+import { HorizontalScrollbar } from '../HorizontalScrollbar/HorizontalScrollbar';
+import Styles from './SearchExercises.module.css';
 
 function SearchExercises({ setExercises, bodyPart, setBodyPart}) {
   const [search, setSearch] = useState('');
@@ -43,7 +44,9 @@ const searchExercises = exerciseData.filter(
 Awesome Exercises You Should Know
       </Typography>
       <Box position="relative" mb="72px">
-        <form onSubmit={handleSearch}>
+        <form 
+        className={Styles.form}
+        onSubmit={handleSearch}>
         <TextField
         sx={{
           input: {

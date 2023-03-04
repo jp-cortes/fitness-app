@@ -1,3 +1,4 @@
+
 .searchButton {
     background-color: #f8b10e;
     width: 200px;
@@ -12,4 +13,11 @@
 .searchButton:hover {
     background-color: whitesmoke;
     color: #f8b10e;
+}
+@media (max-width: 800px) {
+    .form {
+        display: grid;
+        justify-items: center;
+        margin-left: 24px;
+    }
 }

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box } from '@mui/system';
 import { HeroBanner } from '../../components/HeroBanner/HeroBanner';
 import { SearchExercises } from '../../components/SearchExercises/SearchExercises';
 import { Exercises } from '../../components/Exercises/Exercises';
 
  function Home() {
-  const [bodyPart,setBodyPart] = useState([])
+  const [bodyPart,setBodyPart] = useState('all')
   const [exercises, setExercises] = useState([]);
   return (
     <Box>
@@ -17,8 +17,9 @@ import { Exercises } from '../../components/Exercises/Exercises';
       />
       <Exercises
       setExercises={setExercises}
+      exercises={exercises}
       bodyPart={bodyPart}
-      setBodyPart={setBodyPart}
+      
       />
     </Box>
   );
