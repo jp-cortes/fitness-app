@@ -13,7 +13,7 @@ function SearchExercises({ setExercises, bodyPart, setBodyPart}) {
       const bodyParts = await fetchData(`${process.env.REACT_APP_API_URL}/exercises/bodyPartList`);
       setBodyParts(['all', ...bodyParts])
     }
-    fetchExercisesData()
+    fetchExercisesData();
   }, []);
   const handleSearch = async (e) => {
     e.preventDefault()
@@ -54,7 +54,7 @@ Awesome Exercises You Should Know
             border: 'none',
             boderRadius: '4px',
           },
-          width: { lg: '800px', xs: '350px'},
+          width: { lg: '800px', xs: '300px'},
           backgroundColor: "#fff",
           borderRadius: "40px"
         }}

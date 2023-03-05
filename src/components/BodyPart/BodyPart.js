@@ -15,7 +15,7 @@ function BodyPart({ item, bodyPart, setBodyPart }) {
     }}
     onClick={() => {
       setBodyPart(item);
-      window.scrollTo({ top: 1800, left: 100, behavior: 'smooth'})
+      window.scrollTo({ top: 1500, left: 100, behavior: 'smooth'})
     }}
     >
       <img 
@@ -25,9 +25,9 @@ function BodyPart({ item, bodyPart, setBodyPart }) {
        />
        <Typography 
        fontSize='24px' 
-       ontWeight='bold' 
+       fontWeight='bold' 
        color='#3A1212'
-       testTransform='capitalize'
+       textTransform='capitalize'
        >
         {item}
        </Typography>
