@@ -22,21 +22,23 @@
   .bodyPart_button {
     background-color: #f8b10e;
     margin-left: 21px;
-    color: #fff;
+    color: #21325f;
     font-size: 14px;
+    font-weight: bold;
     border-radius: 20px;
     padding: 8px;
     border: solid #f8b10e 1px;
     text-transform: capitalize;
   }
   .target_button {
-    background-color: #d94e4e;
+    background-color: #21325f;
     margin-left: 21px;
-    color: #fff;
+    color: #f8b10e;
     font-size: 14px;
+    font-weight: bold;
     border-radius: 20px;
     padding: 8px;
-    border: solid #d94e4e 1px;
+    border: solid #21325f 1px;
     text-transform: capitalize;
   }
 

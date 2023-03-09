@@ -3,14 +3,14 @@
     width: 200px;
     padding: 16px;
     border-radius: 8px;
-    color: whitesmoke;
+    color: #21325f;
     font-weight: bolder;
     text-decoration: none;
     border: solid 2px #f8b10e;
 }
 
 .button:hover {
-    background-color: whitesmoke;
+    background-color: #21325f;
     color: #f8b10e;
 }
 .bannerImg {
