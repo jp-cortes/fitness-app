@@ -1,6 +1,8 @@
 .detail-image {
     width: 600px;
     height: 700px;
+    border-radius: 12px;
+    border: dotted 1px #f8b10e;
   }
   .icon {
     border: none;

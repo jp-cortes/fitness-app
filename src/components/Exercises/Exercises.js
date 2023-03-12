@@ -54,7 +54,7 @@ useEffect(() => {
         <ExerciseCard key={index} exercise={exercise}/>
       ))}
       </Stack>
-        <Stack>
+        <Stack mt="20px">
           {exercises.length > 9 && (
             <Pagination
             color="standard"

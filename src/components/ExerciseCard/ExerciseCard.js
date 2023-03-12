@@ -4,10 +4,14 @@ import { Stack, Typography } from '@mui/material';
 import Styles from './ExerciseCard.module.css';
 
 export function ExerciseCard({ exercise }) {
-
+const handleClick = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth'})
+}
     
   return (
-    <Link className={Styles.exercise_card} to={`/exercise/${exercise.id}`}>
+    <Link 
+    onClick={handleClick}
+    className={Styles.exercise_card} to={`/exercise/${exercise.id}`}>
         <img src={exercise.gifUrl} alt={exercise.name} loading='lazy'/>
         <Stack direction="row">
             <button className={Styles.bodyPart_button}
