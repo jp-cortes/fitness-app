@@ -37,12 +37,13 @@ To use the application, follow these steps:
 2. Browse through the list of exercises or use the search functionality to find a specific exercise.
 3. Click on an exercise to view detailed information, GIF examples, and links to YouTube videos.
 4. Use the filter by muscle group functionality to find exercises that target specific areas of the body.
-Contributing
+
+# Contributing
 If you would like to contribute to the project, please follow these steps:
 
-Fork the repository.
-Make your changes.
-Submit a pull request.
+* Fork the repository.
+* Make your changes.
+* Submit a pull request.
 
 # License
 This project is licensed under the MIT License. See the LICENSE file for details.
