@@ -20,7 +20,7 @@ function Navbar() {
       >
 
         <Link to="/" style={{ textDecoration: 'none', color: '#3A1212', borderBottom: '3px solid #f8b10e'}}>Home</Link>
-        <a href="#exercises" style={{ textDecoration: 'none', color: '#3A1212'}}>Excersises</a>
+        <a href="/#exercises" style={{ textDecoration: 'none', color: '#3A1212'}}>Excersises</a>
       </Stack>
     </Stack>
   )

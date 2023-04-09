@@ -1,22 +1,24 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Box } from '@mui/system';
-import './App.css';
 import { ExerciseDetail } from './page/ExerciseDetail/ExerciseDetail';
 import { Home } from './page/Home/Home';
 import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
+import './App.css';
 
 function App() {
   return (
-    <Box>
+    <BrowserRouter>
+     <Box>
         <Navbar/>
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/exercise/:id" element={<ExerciseDetail/>}/>
         </Routes>
         <Footer/>
-    </Box>
+     </Box>
+    </BrowserRouter>
   )
 }
 export { App }

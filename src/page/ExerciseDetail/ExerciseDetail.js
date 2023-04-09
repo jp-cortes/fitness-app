@@ -32,7 +32,7 @@ useEffect(() => {
   }
   fetcExercisesData();
 }, [id])
-console.log(exerciseVideos)
+// console.log(exerciseVideos)
   return (
     <Box>
       <Detail exerciseDetail={exerciseDetail}/>

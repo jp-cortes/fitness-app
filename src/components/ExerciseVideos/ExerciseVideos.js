@@ -4,7 +4,7 @@ import Styles from './ExerciseVideos.module.css'
 
 
 export function ExerciseVideos({ exerciseVideos, name }) {
-  console.log(exerciseVideos.map(i => i.video))
+  // console.log(exerciseVideos.map(i => i.video))
   if(!exerciseVideos.length) return 'Loading'
   return (
     <Box sx={{ marginTop: { lg: '200px', xs: '20px'}}} p='20px'>
@@ -23,7 +23,7 @@ export function ExerciseVideos({ exerciseVideos, name }) {
           className={Styles['exercise-video']}
           href={`https://www.youtube.com/watch?v${item.video.videoId}`}
           target="_blank"
-          rel="noreferrer"
+          rel=" noopener noreferrer"
           >
             <img src={item.video.thumbnails[0].url} alt={item.video.title}/>
             <Box>
